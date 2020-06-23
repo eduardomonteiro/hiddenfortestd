@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>97957152-4d61-43c1-85e7-c6226924e565</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>..\..\..</DockerfileContext>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MassTransit" Version="6.3.2" />
+    <PackageReference Include="MassTransit.Extensions.DependencyInjection" Version="6.3.2" />
+    <PackageReference Include="MassTransit.RabbitMQ" Version="6.3.2" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Faces.SharedLib\Messaging.InterfacesConstants\Messaging.InterfacesConstants.csproj" />
+  </ItemGroup>
+
+</Project>
